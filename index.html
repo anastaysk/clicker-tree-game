@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tree Growing Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <img src="assets/logo.png" class="logo">
+
+    <div class="cloud" id="cloud1"></div>
+    <div class="cloud" id="cloud2"></div>
+    <div class="cloud" id="cloud3"></div>
+
+    <div class="bird" id="bird1"></div>
+    <div class="bird" id="bird2"></div>
+
+    <div class="tree-stage">
+      <div class="platform-container">
+        <img src="assets/platform.png" alt="Платформа" id="platform" draggable="false">
+        <img src="assets/first1.png" alt="Росток" id="tree-image" draggable="false">
+        <img src="assets/cursor.png" alt="Курсор" id="click-hint" draggable="false">
+      </div>
+    </div>
+
+    <div id="promo-modal" class="hidden">
+      <span>www.smth.com</span>
+      <p>PROMOCODE</p>
+      <button id="activate-button">Aktifkan Kode Promo</button>
+    </div>
+
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <div id="overlay"></div>
+  
+  <script src="game.js"></script>
+</body>
+</html>
